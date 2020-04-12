@@ -33,7 +33,7 @@ export default class MovieList extends React.Component {
     this.getMovies(this.props.type);
   }
 
-  componentWillReceiveProps(nextProps, nextState) {
+  UNSAFE_componentWillReceiveProps(nextProps, nextState) {
     // console.log("componentWillReceiveProps");
     // console.log("props", this.props);
     // console.log("new props", nextProps);
